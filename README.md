@@ -15,3 +15,7 @@ Followed only the math part. Here is my own math annotations about it as well. E
 <img width="1010" height="735" alt="Screenshot 2026-09-07 at 11 50 17" src="https://github.com/user-attachments/assets/8d38393c-873f-4e0c-a0e6-44648709a1b1" />
 
 <img width="1235" height="639" alt="Screenshot 2026-09-07 at 11 50 29" src="https://github.com/user-attachments/assets/2b428752-358d-4a18-8fde-a362301439f4" />
+
+---
+
+Should also be noted that your cursor will disepear after running this. Print this to get it back "\x1b[?25l"
