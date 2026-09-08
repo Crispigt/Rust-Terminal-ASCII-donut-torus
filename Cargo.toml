@@ -1,0 +1,7 @@
+[package]
+name = "torus"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+terminal_size = "0.4.4"
