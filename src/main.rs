@@ -46,8 +46,8 @@ fn main() {
 
     let mut f = preF * h as f32;
     
-    let step = std::f32::consts::TAU / 400.0;
-    let stepB = std::f32::consts::TAU / 280.0;
+    let step = std::f32::consts::TAU / 100.0;
+    let stepB = std::f32::consts::TAU / 70.0;
 
     let mut A: f32 = 0.0;
     let mut B: f32 = stepB*10.0;
@@ -86,7 +86,7 @@ fn main() {
 
         calculateAndDrawTorusFrame(A,B,&mut win,f);
 
-        std::thread::sleep(std::time::Duration::from_millis(10));
+        std::thread::sleep(std::time::Duration::from_millis(15));
     }
 
 }
@@ -98,9 +98,9 @@ fn calculateAndDrawTorusFrame(A: f32, B: f32, win: &mut Window, f: f32) {
     let (sinB, cosB) = B.sin_cos();
 
     // These will have to be with in loops that go over the circels
-    let stepsThetha = 300;
+    let stepsThetha = 180;
     let stepThetha = std::f32::consts::TAU / stepsThetha as f32;
-    let stepsPhi = 500;
+    let stepsPhi = 300;
     let stepPhi = std::f32::consts::TAU / stepsPhi as f32; // Should be more frequent because it's larger
     for t in 0..stepsThetha{
         let thetha: f32 = t as f32 *stepThetha;
